@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <title>Roms</title>
+
+    <style>
+        .second-section {
+            margin-bottom: 20px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding: 3rem;
+        }
+
+        @keyframes fadeInLeft{
+            from{
+                transform: translate(-100%);
+                opacity: 0;
+            }to{
+                opacity: 1;
+            }
+        }
+
+        h2, p, img, h1, button, span {
+            animation: fadeInLeft 1.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#section-1" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img id="logo" src="Assets/images/logo-dark.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#section-1" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#section-2" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#section-3" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Achievements</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button id="dark-mode-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">Dark Mode</button>
+        </div>
+    </nav>
+    
+    <section id="section-1" class="bg-white dark:bg-gray-900 mt-0 h-screen">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Hi! I'm Roms</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">My name is Jhon Rommel JR D. Golandrina, and I am a fourth-year BSIT student at the Technological Institute of the Philippines. I am an aspiring front-end developer.</p>
+    
+                <div class="relative inline-block text-left">
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                        Contact me!
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-12 right-0">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                            <li>
+                                <a href="https://www.facebook.com/romsglndrn" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/romsgolandrina" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/romsgolandrina/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img id="profile-img" src="/Assets/images/me.png" alt="mockup" class="rounded-full" style="width: 500px; height: 500px; border: 2px solid #e2e8f0;">
+            </div>            
+        </div>
+    </section>
+    
+    <section id="section-2" class="bg-white dark:bg-gray-900 h-screen">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-16t">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Programming Skills</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">These are the programming languages, frameworks, and libraries that I am familiar with.</p>
+            </div>
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-orange-500 dark:text-orange-300">
+                        <svg class="w-[48px] h-[48px] text-orange-500 dark:text-orange-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="m3 2 1.6 17.8L12 22l7.5-2.2L21 2H3Zm14 6H9l.2 2H17l-.6 6.6-4.2 1.4-4.3-1.4-.3-3h2l.2 1.4 2.4.8 2.3-.7.3-3H7.4L7 6h10.4L17 8Z"/>
+                        </svg>
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">HTML5</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+            </div>            
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-blue-700 dark:text-white">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="m3 2 1.6 17.8L12 22l7.5-2.2L21 2H3Zm13.3 14.7L12 18l-4.3-1.2-.3-3.1h2.1l.2 1.5 2.3.6 2.3-.6.3-3H7.3l-.2-2h7.7l.1-2H7l-.2-2h10.6l-1 10.6Z"/>
+                        </svg>                
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">CSS</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+            </div>
+            
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-blue-700 dark:text-white">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M8.6 4.7A8 8 0 0 1 19 8h-.7c-.7 0-1.2.3-1.2 1 0 .2 0 2-2 2s-2-1.8-2-2c0-1.5-.8-1.7-1.7-2L10 6.6c-1-.5-1.3-1.2-1.5-1.9ZM6 4a10 10 0 0 0-2.8 3.3A10 10 0 0 0 12.5 22 10 10 0 1 0 6 4Zm13.4 11.1-.8-.1h-.2a3.4 3.4 0 0 0-3.4 3.4v1a8 8 0 0 0 4.4-4.3ZM12 20A8 8 0 0 1 5.1 8c1 .5 1.4 1.5 1.8 2.4l.7 1.1c.5.7 1 1 1.6 1.4.5.3 1 .6 1.6 1.3 1.4 1.8 1.4 4.3 1.3 5.8Z" clip-rule="evenodd"/>
+                        </svg>                        
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">JavaScript</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 10%"></div>
+            </div>
+            
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-blue-700 dark:text-white">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M21.7 12c0-1.4-1.3-2.7-3.4-3.5V8c.3-2.1-.2-3.6-1.3-4.2-1.3-.7-3-.2-4.8 1.2-1.8-1.4-3.5-2-4.7-1.2C6.4 4.4 5.9 5.9 6 8v.5c-2 .8-3.4 2-3.4 3.5 0 1.4 1.4 2.7 3.5 3.5L6 16c-.2 2.1.3 3.6 1.4 4.2.3.2.8.3 1.2.3a6 6 0 0 0 3.5-1.5 6 6 0 0 0 3.5 1.5c.5 0 .9 0 1.3-.3 1-.6 1.6-2.1 1.3-4.2v-.5c2-.8 3.4-2 3.4-3.5Zm-6-7.5.8.1c.7.5 1 1.6.9 3.3l-.1.3c-.8-.3-1.7-.4-2.6-.5-.5-.7-1-1.4-1.7-2 .7-.7 1.7-1.1 2.7-1.2Zm-8 8.7.6 1 .6 1c-.5 0-1-.2-1.6-.4l.5-1.6Zm-.4-4L9 8.8l-.6 1-.5 1-.5-1.6Zm1 2.8a19.3 19.3 0 0 1 2-3.4 19.9 19.9 0 0 1 3.9 0 19.6 19.6 0 0 1 2 3.4 19.3 19.3 0 0 1-2 3.4 20 20 0 0 1-4 0A20.2 20.2 0 0 1 8.4 12Zm7.8 2.3.5-1 .5 1.5-1.6.4.6-1Zm.5-3.5-.5-1-.6-1c.6 0 1 .2 1.6.4l-.5 1.6Zm-4.4-4.5 1.1 1.2a20.9 20.9 0 0 0-2.2 0l1.1-1.2ZM8 4.6c.2 0 .5-.2.7-.1 1 0 2 .5 2.8 1.2-.7.6-1.3 1.3-1.8 2a8 8 0 0 0-2.6.5v-.3c-.2-1.7.1-2.8.9-3.3ZM3.7 12c0-.9 1-1.8 2.7-2.5l.8 2.5-.8 2.5C4.7 13.8 3.7 13 3.7 12ZM8 19.4c-.8-.5-1-1.6-1-3.3l.1-.3c.9.3 1.7.4 2.6.5.5.7 1.1 1.4 1.8 2-1.5 1.1-2.8 1.5-3.5 1Zm3-3a20.3 20.3 0 0 0 2.4 0l-1.2 1.3-1.1-1.2Zm5.5 3c-.8.4-2.1 0-3.5-1l1.7-2c.9-.2 1.8-.3 2.6-.6v.3c.2 1.7-.1 2.8-.8 3.3Zm1.6-4.9c-.2-.9-.5-1.7-.9-2.5.4-.8.7-1.6.9-2.5 1.6.7 2.6 1.6 2.6 2.5 0 .9-1 1.8-2.6 2.5Z"/>
+                            <path d="M12.2 13.8a1.8 1.8 0 1 0-1.8-1.8 1.8 1.8 0 0 0 1.8 1.8Z"/>
+                        </svg>                        
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">ReactJS</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 30%"></div>
+            </div>
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-blue-700 dark:text-white">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.8 5.7A4.8 4.8 0 0 0 7 10a3.4 3.4 0 0 1 2.7-1.7c1.7 0 3 2 3.8 2.6a5.7 5.7 0 0 0 5.4 1c2-.7 2.9-3 3.1-4-1 1.4-2.4 2.2-4.3 1.2-1.2-.6-2.1-3.4-6-3.3Zm-5 6.3A4.8 4.8 0 0 0 2 16.2a3.4 3.4 0 0 1 2.7-1.7c1.7 0 3 2 3.8 2.6a5.7 5.7 0 0 0 5.4.9c2-.7 3-2.9 3.1-4-1 1.4-2.4 2.3-4.2 1.3-1.3-.7-2.2-3.4-6-3.3Z"/>
+                        </svg>                                               
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">TailwindCSS</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+            </div>
+            <div class="flex justify-between mb-4">
+                <div class="flex items-center">
+                    <span class="text-base font-medium text-blue-700 dark:text-white">
+                        <svg class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="m16 12-5.7-2.8h-.1v6.5l2.4-2.9 3.3-.8Z"/>
+                            <path d="M11.5 4 17 7.5a4 4 0 0 1 2 3.8 3 3 0 0 1-2.4 2.6h-.2l-2.8.7-2 2.5a2 2 0 0 1-.6.5l.1.1a2 2 0 0 0 2 0c.6-.3 2.2-1.1 4.7-2.8l.2-.2c1.4-1 3.6-2.5 4-4.2A10 10 0 0 0 12.6 2c-1.6 0-3 .2-4.5.8 1.2.3 2.3.7 3.4 1.3Z"/>
+                            <path d="M5.4 17v-6.4a3.7 3.7 0 0 1 1.7-3 4 4 0 0 1 3.4-.3l.5.1 5.8 2.9.2.2A2.1 2.1 0 0 0 16 9l-5.5-3.3c-1.7-.8-3.9-1.5-5.2-1a10 10 0 0 0 .5 15.1c-.2-.9-.4-1.8-.4-2.7Z"/>
+                            <path d="m19.1 16.2-.3.1a60.4 60.4 0 0 1-4.7 3 4 4 0 0 1-4 0A3.8 3.8 0 0 1 8.3 16V9H8a1.8 1.8 0 0 0-.8 1.6V17c0 1.5.4 3 1.1 4.3A10.1 10.1 0 0 0 22 14c-.8.9-1.8 1.6-2.8 2.3Z"/>
+                          </svg>                                                                      
+                    </span>
+                    <span class="ml-2 text-sm font-medium text-blue-700 dark:text-white">Flowbite</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-2">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+            </div>                  
+    </section>
+    
+    <section id="section-3" class="bg-white dark:bg-gray-900 min-h-screen flex items-center justify-center h-screen mb-16">
+        <div class="max-w-screen-xl mx-auto px-4 py-8 sm:py-16">
+            <div class="max-w-screen-md mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Achievements</h2>
+                <p class="text-xl text-gray-500 dark:text-gray-400">These are my certificates throughout my college journey.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex justify-center">
+                    <img class="rounded-lg max-w-full h-auto" src="Assets/images/2020-2021 2nd Semester.jpg" alt="">
+                </div>
+                <p class="text-sm text-center text-gray-600 mt-4">Lorem ipsum dolor sit amet</p>
+    
+                <div class="flex justify-center">
+                    <img class="rounded-lg max-w-full h-auto" src="Assets/images/2021-2022 1st Semester.jpg" alt="">
+                </div>
+                <p class="text-sm text-center text-gray-600 mt-4">Consectetur adipiscing elit</p>
+    
+                <div class="flex justify-center">
+                    <img class="rounded-lg max-w-full h-auto" src="Assets/images/2022-2023 2nd Semester.jpg" alt="">
+                </div>
+                <p class="text-sm text-center text-gray-600 mt-4">Sed do eiusmod tempor incididunt</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<footer id="contact" class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                  <img src="Assets/images/logo-dark.png" class="h-8 me-3" alt="FlowBite Logo" />
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow me</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://www.facebook.com/romsglndrn" class="hover:underline ">Facebook</a>
+                      </li>
+                      <li>
+                          <a href="https://www.linkedin.com/in/jhon-rommel-jr-golandrina-0279652ab/" class="hover:underline">LinkedIn</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline"></a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Dribbble account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+    
+
+       
+    
+    
+    <script>
+        var darkModeToggleBtn = document.getElementById('dark-mode-toggle');
+        var logoImg = document.getElementById('logo'); // Selecting the logo image element
+        var profileImg = document.getElementById('profile-img'); // Selecting the profile image element
+
+        darkModeToggleBtn.addEventListener('click', function () {
+            var htmlElement = document.documentElement;
+            htmlElement.classList.toggle('dark');
+
+            // Update localStorage
+            var isDarkMode = htmlElement.classList.contains('dark');
+            localStorage.setItem('color-theme', isDarkMode ? 'dark' : 'light');
+
+            // Change logo image based on mode
+            if (isDarkMode) {
+                logoImg.src = 'Assets/images/logo-dark.png'; // Change to dark logo in dark mode
+                profileImg.style.border = '2px solid #4a5568'; // Dark mode border color
+            } else {
+                logoImg.src = 'Assets/images/logo-light.png'; // Change to light logo in light mode
+                profileImg.style.border = '2px solid #e2e8f0'; // Light mode border color
+            }
+        });
+
+        // Dropdown toggle
+        var dropdownToggle = document.getElementById('dropdownDefaultButton');
+        var dropdownMenu = document.getElementById('dropdown');
+
+        dropdownToggle.addEventListener('click', function () {
+            dropdownMenu.classList.toggle('hidden');
+        });
+
+        // Check for previously saved theme
+        if (localStorage.getItem('color-theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            logoImg.src = 'Assets/images/logo-dark.png'; // Change to dark logo if dark mode is enabled
+            profileImg.style.border = '2px solid #4a5568'; // Dark mode border color if dark mode is enabled
+        }       
+    </script>
+
+</body>
+</html>
